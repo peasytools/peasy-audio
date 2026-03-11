@@ -4,11 +4,11 @@
 [![Python](https://img.shields.io/pypi/pyversions/peasy-audio)](https://pypi.org/project/peasy-audio/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Python audio processing toolkit with 12 operations for everyday audio tasks. [Convert between 6 formats](https://peasyaudio.com/tools/convert-audio/) (MP3, WAV, OGG, FLAC, AAC, M4A), [trim and split](https://peasyaudio.com/tools/trim-audio/) audio segments, [merge multiple files](https://peasyaudio.com/tools/merge-audio/), [normalize volume](https://peasyaudio.com/tools/normalize-audio/) to target dBFS levels, apply fade effects, change playback speed, reverse audio, overlay tracks, and generate silence -- all through a clean, consistent API. Every function accepts `bytes`, `Path`, or `str` and returns a frozen `AudioResult` dataclass, making it easy to chain operations or integrate into web services. Powered by [pydub](https://github.com/jiaaro/pydub) with [FFmpeg](https://ffmpeg.org/) for codec support.
+Python audio processing toolkit with 12 operations for everyday audio tasks. Convert between 6 formats (MP3, WAV, OGG, FLAC, AAC, M4A), trim and split audio segments, merge multiple files, normalize volume to target dBFS levels, apply fade effects, change playback speed, reverse audio, overlay tracks, and generate silence -- all through a clean, consistent API. Every function accepts `bytes`, `Path`, or `str` and returns a frozen `AudioResult` dataclass, making it easy to chain operations or integrate into web services. Powered by [pydub](https://github.com/jiaaro/pydub) with [FFmpeg](https://ffmpeg.org/) for codec support.
 
 Built for [PeasyAudio](https://peasyaudio.com), a free online audio toolkit with 10 browser-based tools for converting, trimming, merging, normalizing, and analyzing audio files. The site processes files using FFmpeg WASM for privacy, while the Python package brings the same capabilities to scripts, pipelines, and AI assistants.
 
-> **Try the interactive tools at [peasyaudio.com](https://peasyaudio.com)** -- [Convert Audio](https://peasyaudio.com/tools/convert-audio/), [Trim Audio](https://peasyaudio.com/tools/trim-audio/), [Merge Audio](https://peasyaudio.com/tools/merge-audio/), [Normalize Audio](https://peasyaudio.com/tools/normalize-audio/), and [Audio Info](https://peasyaudio.com/tools/audio-info/).
+> **Try the interactive tools at [peasyaudio.com](https://peasyaudio.com)** -- audio conversion, trimming, merging, normalization, and analysis.
 
 <p align="center">
   <img src="demo.gif" alt="peasy-audio demo — audio format conversion, silence generation, and volume normalization in Python REPL" width="800">
@@ -134,7 +134,7 @@ result = convert("track.wav", target_format="ogg", bitrate="192k")
 result = convert("podcast.wav", target_format="aac", bitrate="256k")
 ```
 
-Learn more: [Audio Converter Tool](https://peasyaudio.com/tools/convert-audio/) · [Audio Formats Guide](https://peasyaudio.com/guides/)
+Learn more: [PeasyAudio](https://peasyaudio.com) · [Developer Docs](https://peasyaudio.com/developers/)
 
 ### Trimming & Splitting
 
@@ -165,7 +165,7 @@ for i, chunk in enumerate(chunks):
     print(f"Segment {i}: {chunk.duration_ms / 1000:.1f}s")
 ```
 
-Learn more: [Trim Audio Tool](https://peasyaudio.com/tools/trim-audio/) · [Audio Editing Guide](https://peasyaudio.com/guides/)
+Learn more: [PeasyAudio](https://peasyaudio.com) · [Audio Glossary](https://peasyaudio.com/glossary/)
 
 ### Volume & Normalization
 
@@ -201,7 +201,7 @@ louder = change_volume("quiet_recording.mp3", db=6.0)
 quieter = change_volume("loud_track.mp3", db=-3.0)
 ```
 
-Learn more: [Normalize Audio Tool](https://peasyaudio.com/tools/normalize-audio/) · [Volume Guide](https://peasyaudio.com/guides/)
+Learn more: [PeasyAudio](https://peasyaudio.com) · [OpenAPI Spec](https://peasyaudio.com/api/openapi.json)
 
 ### Audio Effects
 
@@ -249,7 +249,7 @@ with open("gap.wav", "wb") as f:
 final = merge("intro.mp3", "gap.wav", "content.mp3", "gap.wav", "outro.mp3")
 ```
 
-Learn more: [Audio Tools](https://peasyaudio.com/tools/) · [Audio Effects Guide](https://peasyaudio.com/guides/)
+Learn more: [PeasyAudio](https://peasyaudio.com) · [Developer Docs](https://peasyaudio.com/developers/)
 
 ### Audio Analysis
 
@@ -287,7 +287,7 @@ for fmt in ["mp3", "wav", "ogg", "flac"]:
     print(f"{fmt.upper():>4}: {result.size_bytes:>10,} bytes ({ratio:.1%} of original)")
 ```
 
-Learn more: [Audio Info Tool](https://peasyaudio.com/tools/audio-info/) · [Audio Formats Reference](https://peasyaudio.com/guides/)
+Learn more: [PeasyAudio](https://peasyaudio.com) · [Audio Glossary](https://peasyaudio.com/glossary/)
 
 ## Command-Line Interface
 
@@ -363,9 +363,8 @@ peasy-audio reverse-cmd sample.mp3 -o reversed.mp3
 
 ## Learn More About Audio Processing
 
-- **Tools**: [Convert Audio](https://peasyaudio.com/tools/convert-audio/) · [Trim Audio](https://peasyaudio.com/tools/trim-audio/) · [Merge Audio](https://peasyaudio.com/tools/merge-audio/) · [Normalize Audio](https://peasyaudio.com/tools/normalize-audio/) · [Audio Info](https://peasyaudio.com/tools/audio-info/)
-- **Browse**: [All Audio Tools](https://peasyaudio.com/tools/) · [Audio Formats](https://peasyaudio.com/guides/)
-- **Guides**: [Audio Glossary](https://peasyaudio.com/glossary/) · [Audio Guides](https://peasyaudio.com/guides/)
+- **Home**: [PeasyAudio](https://peasyaudio.com)
+- **Reference**: [Audio Glossary](https://peasyaudio.com/glossary/)
 - **API**: [Developer Docs](https://peasyaudio.com/developers/) · [OpenAPI Spec](https://peasyaudio.com/api/openapi.json)
 
 ## Peasy Developer Tools
@@ -378,7 +377,7 @@ Part of the [Peasy](https://peasytools.com) open-source developer tools ecosyste
 | peasy-image | [PyPI](https://pypi.org/project/peasy-image/) | [npm](https://www.npmjs.com/package/peasy-image) | Image resize, crop, convert, compress, 20 operations -- [peasyimage.com](https://peasyimage.com) |
 | peasy-css | [PyPI](https://pypi.org/project/peasy-css/) | [npm](https://www.npmjs.com/package/peasy-css) | CSS gradients, shadows, flexbox, grid generators -- [peasycss.com](https://peasycss.com) |
 | peasy-compress | [PyPI](https://pypi.org/project/peasy-compress/) | [npm](https://www.npmjs.com/package/peasy-compress) | ZIP, TAR, gzip, brotli archive operations -- [peasytools.com](https://peasytools.com) |
-| peasy-document | [PyPI](https://pypi.org/project/peasy-document/) | [npm](https://www.npmjs.com/package/peasy-document) | Markdown, HTML, CSV, JSON conversions -- [peasytools.com](https://peasytools.com) |
+| peasy-document | [PyPI](https://pypi.org/project/peasy-document/) | [npm](https://www.npmjs.com/package/peasy-document) | Markdown, HTML, CSV, JSON, YAML conversions -- [peasytools.com](https://peasytools.com) |
 | **peasy-audio** | [PyPI](https://pypi.org/project/peasy-audio/) | -- | Audio convert, trim, merge, normalize, 12 operations -- [peasyaudio.com](https://peasyaudio.com) |
 | peasy-video | [PyPI](https://pypi.org/project/peasy-video/) | -- | Video trim, resize, GIF conversion -- [peasyvideo.com](https://peasyvideo.com) |
 | peasytext | [PyPI](https://pypi.org/project/peasytext/) | [npm](https://www.npmjs.com/package/peasytext) | Text processing and transformation -- [peasytext.com](https://peasytext.com) |
