@@ -1,6 +1,6 @@
 # peasy-audio
 
-[![PyPI](https://img.shields.io/pypi/v/peasy-audio)](https://pypi.org/project/peasy-audio/)
+[![PyPI version](https://agentgif.com/badge/pypi/peasy-audio/version.svg)](https://pypi.org/project/peasy-audio/)
 [![Python](https://img.shields.io/pypi/pyversions/peasy-audio)](https://pypi.org/project/peasy-audio/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
