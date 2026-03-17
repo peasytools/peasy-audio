@@ -364,8 +364,8 @@ peasy-audio reverse-cmd sample.mp3 -o reversed.mp3
 
 ## Learn More About Audio Processing
 
-- **Tools**: [Audio Converter](https://peasyaudio.com/tools/audio-converter/) · [Audio Trimmer](https://peasyaudio.com/tools/audio-trimmer/) · [Audio Merger](https://peasyaudio.com/tools/audio-merger/) · [All Audio Tools](https://peasyaudio.com/)
-- **Guides**: [Audio Format Guide](https://peasyaudio.com/guides/audio-formats/) · [Volume Normalization Guide](https://peasyaudio.com/guides/volume-normalization/) · [All Guides](https://peasyaudio.com/guides/)
+- **Tools**: [Audio Converter](https://peasyaudio.com/audio/audio-converter/) · [Audio Trimmer](https://peasyaudio.com/audio/audio-trimmer/) · [Audio Merger](https://peasyaudio.com/audio/audio-merger/) · [All Audio Tools](https://peasyaudio.com/)
+- **Guides**: [Audio Format Guide](https://peasyaudio.com/guides/) · [Volume Normalization Guide](https://peasyaudio.com/guides/) · [All Guides](https://peasyaudio.com/guides/)
 - **Glossary**: [Sample Rate](https://peasyaudio.com/glossary/sample-rate/) · [Bitrate](https://peasyaudio.com/glossary/bitrate/) · [All Terms](https://peasyaudio.com/glossary/)
 - **Formats**: [MP3](https://peasyaudio.com/formats/mp3/) · [WAV](https://peasyaudio.com/formats/wav/) · [FLAC](https://peasyaudio.com/formats/flac/) · [All Formats](https://peasyaudio.com/formats/)
 - **API**: [REST API Docs](https://peasyaudio.com/developers/) · [OpenAPI Spec](https://peasyaudio.com/api/openapi.json)
