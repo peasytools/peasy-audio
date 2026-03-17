@@ -3,6 +3,7 @@
 [![PyPI version](https://agentgif.com/badge/pypi/peasy-audio/version.svg)](https://pypi.org/project/peasy-audio/)
 [![Python](https://img.shields.io/pypi/pyversions/peasy-audio)](https://pypi.org/project/peasy-audio/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://agentgif.com/badge/github/peasytools/peasy-audio/stars.svg)](https://github.com/peasytools/peasy-audio)
 
 Python audio processing toolkit with 12 operations for everyday audio tasks. Convert between 6 formats (MP3, WAV, OGG, FLAC, AAC, M4A), trim and split audio segments, merge multiple files, normalize volume to target dBFS levels, apply fade effects, change playback speed, reverse audio, overlay tracks, and generate silence -- all through a clean, consistent API. Every function accepts `bytes`, `Path`, or `str` and returns a frozen `AudioResult` dataclass, making it easy to chain operations or integrate into web services. Powered by [pydub](https://github.com/jiaaro/pydub) with [FFmpeg](https://ffmpeg.org/) for codec support.
 
