@@ -30,6 +30,7 @@ Built for [PeasyAudio](https://peasyaudio.com), a free online audio toolkit with
   - [Analysis Functions](#analysis-functions)
   - [Types](#types)
 - [Learn More About Audio Processing](#learn-more-about-audio-processing)
+- [Also Available](#also-available)
 - [Peasy Developer Tools](#peasy-developer-tools)
 - [License](#license)
 
@@ -363,9 +364,21 @@ peasy-audio reverse-cmd sample.mp3 -o reversed.mp3
 
 ## Learn More About Audio Processing
 
-- **Home**: [PeasyAudio](https://peasyaudio.com)
-- **Reference**: [Audio Glossary](https://peasyaudio.com/glossary/)
-- **API**: [Developer Docs](https://peasyaudio.com/developers/) · [OpenAPI Spec](https://peasyaudio.com/api/openapi.json)
+- **Tools**: [Audio Converter](https://peasyaudio.com/tools/audio-converter/) · [Audio Trimmer](https://peasyaudio.com/tools/audio-trimmer/) · [Audio Merger](https://peasyaudio.com/tools/audio-merger/) · [All Audio Tools](https://peasyaudio.com/)
+- **Guides**: [Audio Format Guide](https://peasyaudio.com/guides/audio-formats/) · [Volume Normalization Guide](https://peasyaudio.com/guides/volume-normalization/) · [All Guides](https://peasyaudio.com/guides/)
+- **Glossary**: [Sample Rate](https://peasyaudio.com/glossary/sample-rate/) · [Bitrate](https://peasyaudio.com/glossary/bitrate/) · [All Terms](https://peasyaudio.com/glossary/)
+- **Formats**: [MP3](https://peasyaudio.com/formats/mp3/) · [WAV](https://peasyaudio.com/formats/wav/) · [FLAC](https://peasyaudio.com/formats/flac/) · [All Formats](https://peasyaudio.com/formats/)
+- **API**: [REST API Docs](https://peasyaudio.com/developers/) · [OpenAPI Spec](https://peasyaudio.com/api/openapi.json)
+
+## Also Available
+
+| Platform | Install | Link |
+|----------|---------|------|
+| **TypeScript / npm** | `npm install peasy-audio` | [npm](https://www.npmjs.com/package/peasy-audio) |
+| **Go** | `go get github.com/peasytools/peasy-audio-go` | [pkg.go.dev](https://pkg.go.dev/github.com/peasytools/peasy-audio-go) |
+| **Rust** | `cargo add peasy-audio` | [crates.io](https://crates.io/crates/peasy-audio) |
+| **Ruby** | `gem install peasy-audio` | [RubyGems](https://rubygems.org/gems/peasy-audio) |
+| **MCP** | `uvx --from "peasy-audio[mcp]" python -m peasy_audio.mcp_server` | [Config](#mcp-server-claude-cursor-windsurf) |
 
 ## Peasy Developer Tools
 
@@ -373,16 +386,14 @@ Part of the [Peasy](https://peasytools.com) open-source developer tools ecosyste
 
 | Package | PyPI | npm | Description |
 |---------|------|-----|-------------|
-| peasy-pdf | [PyPI](https://pypi.org/project/peasy-pdf/) | [npm](https://www.npmjs.com/package/peasy-pdf) | PDF merge, split, compress, 21 operations -- [peasypdf.com](https://peasypdf.com) |
-| peasy-image | [PyPI](https://pypi.org/project/peasy-image/) | [npm](https://www.npmjs.com/package/peasy-image) | Image resize, crop, convert, compress, 20 operations -- [peasyimage.com](https://peasyimage.com) |
-| peasy-css | [PyPI](https://pypi.org/project/peasy-css/) | [npm](https://www.npmjs.com/package/peasy-css) | CSS gradients, shadows, flexbox, grid generators -- [peasycss.com](https://peasycss.com) |
-| peasy-compress | [PyPI](https://pypi.org/project/peasy-compress/) | [npm](https://www.npmjs.com/package/peasy-compress) | ZIP, TAR, gzip, brotli archive operations -- [peasytools.com](https://peasytools.com) |
-| peasy-document | [PyPI](https://pypi.org/project/peasy-document/) | [npm](https://www.npmjs.com/package/peasy-document) | Markdown, HTML, CSV, JSON, YAML conversions -- [peasytools.com](https://peasytools.com) |
-| **peasy-audio** | [PyPI](https://pypi.org/project/peasy-audio/) | -- | Audio convert, trim, merge, normalize, 12 operations -- [peasyaudio.com](https://peasyaudio.com) |
-| peasy-video | [PyPI](https://pypi.org/project/peasy-video/) | -- | Video trim, resize, GIF conversion -- [peasyvideo.com](https://peasyvideo.com) |
-| peasytext | [PyPI](https://pypi.org/project/peasytext/) | [npm](https://www.npmjs.com/package/peasytext) | Text processing and transformation -- [peasytext.com](https://peasytext.com) |
-| peasy-convert | [PyPI](https://pypi.org/project/peasy-convert/) | -- | Unified CLI for all Peasy tools -- [peasytools.com](https://peasytools.com) |
-| peasy-mcp | [PyPI](https://pypi.org/project/peasy-mcp/) | -- | Unified MCP server for AI assistants -- [peasytools.com](https://peasytools.com) |
+| peasy-pdf | [PyPI](https://pypi.org/project/peasy-pdf/) | [npm](https://www.npmjs.com/package/peasy-pdf) | PDF merge, split, compress, 21 operations — [peasypdf.com](https://peasypdf.com) |
+| peasy-image | [PyPI](https://pypi.org/project/peasy-image/) | [npm](https://www.npmjs.com/package/peasy-image) | Image resize, crop, convert, compress, 20 operations — [peasyimage.com](https://peasyimage.com) |
+| peasytext | [PyPI](https://pypi.org/project/peasytext/) | [npm](https://www.npmjs.com/package/peasytext) | Text case, slugify, word count, encoding — [peasytext.com](https://peasytext.com) |
+| peasy-css | [PyPI](https://pypi.org/project/peasy-css/) | [npm](https://www.npmjs.com/package/peasy-css) | CSS gradients, shadows, flexbox, grid generators — [peasycss.com](https://peasycss.com) |
+| peasy-compress | [PyPI](https://pypi.org/project/peasy-compress/) | [npm](https://www.npmjs.com/package/peasy-compress) | ZIP, TAR, gzip, brotli archive operations — [peasytools.com](https://peasytools.com) |
+| peasy-document | [PyPI](https://pypi.org/project/peasy-document/) | [npm](https://www.npmjs.com/package/peasy-document) | Markdown, HTML, CSV, JSON conversions — [peasyformats.com](https://peasyformats.com) |
+| **peasy-audio** | **[PyPI](https://pypi.org/project/peasy-audio/)** | **[npm](https://www.npmjs.com/package/peasy-audio)** | **Audio convert, trim, merge, normalize — [peasyaudio.com](https://peasyaudio.com)** |
+| peasy-video | [PyPI](https://pypi.org/project/peasy-video/) | [npm](https://www.npmjs.com/package/peasy-video) | Video trim, resize, GIF conversion — [peasyvideo.com](https://peasyvideo.com) |
 
 ## License
 
