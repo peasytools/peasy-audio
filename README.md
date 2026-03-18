@@ -12,7 +12,7 @@ Built for [PeasyAudio](https://peasyaudio.com), a free online audio toolkit with
 > **Try the interactive tools at [peasyaudio.com](https://peasyaudio.com)** -- audio conversion, trimming, merging, normalization, and analysis.
 
 <p align="center">
-  <img src="demo.gif" alt="peasy-audio demo — audio format conversion, silence generation, and volume normalization in Python REPL" width="800">
+  <a href="https://agentgif.com/r0teOisi"><img src="https://media.agentgif.com/r0teOisi.gif" alt="peasy-audio demo — audio format conversion, silence generation, and volume normalization in Python REPL" width="800"></a>
 </p>
 
 ## Table of Contents
